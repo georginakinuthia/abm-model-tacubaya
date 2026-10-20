@@ -1,9 +1,8 @@
-# Freetown ABM
+# Tacubaya ABM
 
-Agent-based pedestrian microsimulation for a corridor in Freetown, Sierra Leone. The model combines MNL route choice (Antonini et al. 2006) with ORCA collision avoidance (van den Berg et al. 2011) and Weidmann speed-density relationships to simulate how urban design interventions — shade, furniture, stalls — shape pedestrian flow and comfort.
+Agent-based pedestrian microsimulation for the Tacubaya transit hub in Mexico City (CDMX). The model combines multinomial logit (MNL) route choice (Antonini et al. 2006) with ORCA collision avoidance (van den Berg et al. 2011) and Weidmann speed-density relationships to simulate how urban design interventions—sidewalk widening, vendor formalization, shaded canopies, and step-free thresholds—shape pedestrian flow, spatial comfort, and accessibility for vulnerable personas (female commuters, caregivers, elderly, and mobility-impaired pedestrians).
 
-- **Repository**: <https://github.com/Norman-Foster-Institute/abm-model-freetown>
-- **Live Demo**: <https://norman-foster-institute.github.io/abm-model-freetown/>
+- **Repository**: https://github.com/georginakinuthia/abm-model-tacubaya
 
 ## Getting Started
 
@@ -40,7 +39,7 @@ Early versions of this project used [AgentScript](https://github.com/backspaces/
 - **Bundled outdated three.js.** AgentScript carried a pinned version of three.js with known security advisories, which forced a transitive-dependency override on every install.
 - **Shape mismatch.** Most of AgentScript's surface (breeds, links, NetLogo-flavoured lazy getters, flyweight `Patch` objects, sprite rotation, geometry modes) was dead weight for a pedestrian microsim — the only parts we actually used were a thin grid, an agent collection, a `setInterval` tick loop, and a canvas painter for maplibre-gl.
 
-The replacement in [src/sim/](src/sim/) is a complete rewrite designed around **what this simulation actually needs**: cache-friendly SoA cell storage on `Float32Array`s, parallel agent arrays (also SoA), a pre-baked cell color buffer so per-frame cell draw is a single `Uint32Array.set()` memcpy, and a batched-path renderer so agents draw as ~12 fills per frame instead of hundreds of `drawImage` calls. Coordinate convention is `y=0 = north, y grows south` (matches maplibre's canvas-source orientation directly — no flips). Dropping AgentScript shrunk the app bundle by ~40 KB and removed the vulnerable bundled three.js entirely (the project now pins its own current three.js). The sim preserves the pre-existing scenario pipeline byte-for-byte; the baseline fixture test at [src/stores/__tests__/baseline.fixture.test.ts](src/stores/__tests__/baseline.fixture.test.ts) asserts that all Dijkstra distance-field summary statistics match the pre-refactor snapshot exactly.
+The replacement in [src/sim/](src/sim/) is a complete rewrite designed around **what this simulation actually needs**: cache-friendly SoA cell storage on `Float32Array`s, parallel agent arrays (also SoA), a pre-baked cell color buffer so per-frame cell draw is a single `Uint32Array.set()` memcpy, and a batched-path renderer so agents draw as ~12 fills per frame instead of hundreds of `drawImage` calls. Coordinate convention is `y=0 = north, y grows south` (matches maplibre's canvas-source orientation directly — no flips). Dropping AgentScript shrunk the app bundle by ~40 KB and removed the vulnerable bundled three.js entirely (the project now pins its own current three.js). The sim preserves the pre-existing scenario pipeline byte-for-byte; the baseline fixture test at [src/stores/**tests**/baseline.fixture.test.ts](src/stores/__tests__/baseline.fixture.test.ts) asserts that all Dijkstra distance-field summary statistics match the pre-refactor snapshot exactly.
 
 ## Project Structure
 
@@ -91,14 +90,14 @@ Each tick, every agent runs through these stages in order:
 
 ## Simulation Parameters
 
-| Parameter | Value |
-|-----------|-------|
-| Duration | 1 hour (3600 s) |
-| Frame rate | 30 FPS |
-| Normal tick | 0.25 s (total: 14,400 ticks) |
-| Fast tick | 1.0 s (total: 3,600 ticks) |
+| Parameter          | Value                                                                    |
+| ------------------ | ------------------------------------------------------------------------ |
+| Duration           | 1 hour (3600 s)                                                          |
+| Frame rate         | 30 FPS                                                                   |
+| Normal tick        | 0.25 s (total: 14,400 ticks)                                             |
+| Fast tick          | 1.0 s (total: 3,600 ticks)                                               |
 | Base walking speed | 1.34 m/s — Weidmann (1993) meta-analysis mean (configurable 0.8–2.0 m/s) |
-| Arrival radius | 2 m |
+| Arrival radius     | 2 m                                                                      |
 
 Speed can be toggled between normal and fast during the simulation without affecting the countdown timer.
 
