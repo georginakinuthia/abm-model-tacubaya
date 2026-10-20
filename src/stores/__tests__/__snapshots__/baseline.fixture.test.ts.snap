@@ -1,0 +1,360 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > distance field spot-checks — round-trip lon/lat at known-walkable points 1`] = `
+{
+  "samples": {
+    "node-0": {
+      "dist": "Infinity",
+      "idx": 96492,
+      "x": 156,
+      "y": 223,
+    },
+    "node-1": {
+      "dist": "0.000000",
+      "idx": 77974,
+      "x": 214,
+      "y": 180,
+    },
+    "node-2": {
+      "dist": "Infinity",
+      "idx": 9924,
+      "x": 420,
+      "y": 22,
+    },
+    "node-3": {
+      "dist": "196.501816",
+      "idx": 34491,
+      "x": 363,
+      "y": 79,
+    },
+  },
+  "targetNode": "node-1",
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > furniture potential summary stats 1`] = `
+{
+  "finiteCount": 140832,
+  "infiniteCount": 0,
+  "length": 140832,
+  "maxFinite": "-1.000000",
+  "meanFinite": "-1.000000",
+  "minFinite": "-1.000000",
+  "negativeCount": 140832,
+  "positiveCount": 0,
+  "sumFinite": "-140832.000000",
+  "varianceFinite": "0.000000",
+  "zeroCount": 0,
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > node distance fields — per-node summary stats 1`] = `
+{
+  "node-0": {
+    "finiteCount": 0,
+    "infiniteCount": 140832,
+    "length": 140832,
+    "maxFinite": null,
+    "meanFinite": null,
+    "minFinite": null,
+    "negativeCount": 0,
+    "positiveCount": 0,
+    "sumFinite": "0.000000",
+    "varianceFinite": null,
+    "zeroCount": 0,
+  },
+  "node-1": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "268.812653",
+    "meanFinite": "118.362272",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "977080.556548",
+    "varianceFinite": "4304.943194",
+    "zeroCount": 1,
+  },
+  "node-10": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "377.226318",
+    "meanFinite": "146.007436",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1205291.385793",
+    "varianceFinite": "9281.446431",
+    "zeroCount": 1,
+  },
+  "node-11": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "335.637146",
+    "meanFinite": "121.511256",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1003075.418074",
+    "varianceFinite": "7566.933658",
+    "zeroCount": 1,
+  },
+  "node-12": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "417.636627",
+    "meanFinite": "207.372969",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1711863.860154",
+    "varianceFinite": "14654.831690",
+    "zeroCount": 1,
+  },
+  "node-13": {
+    "finiteCount": 0,
+    "infiniteCount": 140832,
+    "length": 140832,
+    "maxFinite": null,
+    "meanFinite": null,
+    "minFinite": null,
+    "negativeCount": 0,
+    "positiveCount": 0,
+    "sumFinite": "0.000000",
+    "varianceFinite": null,
+    "zeroCount": 0,
+  },
+  "node-2": {
+    "finiteCount": 0,
+    "infiniteCount": 140832,
+    "length": 140832,
+    "maxFinite": null,
+    "meanFinite": null,
+    "minFinite": null,
+    "negativeCount": 0,
+    "positiveCount": 0,
+    "sumFinite": "0.000000",
+    "varianceFinite": null,
+    "zeroCount": 0,
+  },
+  "node-3": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "430.730774",
+    "meanFinite": "219.062562",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1808361.449758",
+    "varianceFinite": "15149.434261",
+    "zeroCount": 1,
+  },
+  "node-4": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "411.543030",
+    "meanFinite": "204.054974",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1684473.814377",
+    "varianceFinite": "13747.189058",
+    "zeroCount": 1,
+  },
+  "node-5": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "304.148590",
+    "meanFinite": "149.713938",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1235888.555008",
+    "varianceFinite": "4784.485031",
+    "zeroCount": 1,
+  },
+  "node-6": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "423.949066",
+    "meanFinite": "156.612131",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1292833.142468",
+    "varianceFinite": "14049.478527",
+    "zeroCount": 1,
+  },
+  "node-7": {
+    "finiteCount": 8255,
+    "infiniteCount": 132577,
+    "length": 140832,
+    "maxFinite": "464.373260",
+    "meanFinite": "187.782341",
+    "minFinite": "0.000000",
+    "negativeCount": 0,
+    "positiveCount": 8254,
+    "sumFinite": "1550143.220843",
+    "varianceFinite": "16540.549159",
+    "zeroCount": 1,
+  },
+  "node-8": {
+    "finiteCount": 0,
+    "infiniteCount": 140832,
+    "length": 140832,
+    "maxFinite": null,
+    "meanFinite": null,
+    "minFinite": null,
+    "negativeCount": 0,
+    "positiveCount": 0,
+    "sumFinite": "0.000000",
+    "varianceFinite": null,
+    "zeroCount": 0,
+  },
+  "node-9": {
+    "finiteCount": 0,
+    "infiniteCount": 140832,
+    "length": 140832,
+    "maxFinite": null,
+    "meanFinite": null,
+    "minFinite": null,
+    "negativeCount": 0,
+    "positiveCount": 0,
+    "sumFinite": "0.000000",
+    "varianceFinite": null,
+    "zeroCount": 0,
+  },
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > projected node world coordinates 1`] = `
+{
+  "node-0": {
+    "worldX": "155.698530",
+    "worldY": "222.868411",
+  },
+  "node-1": {
+    "worldX": "213.782410",
+    "worldY": "180.480620",
+  },
+  "node-10": {
+    "worldX": "121.727775",
+    "worldY": "172.758467",
+  },
+  "node-11": {
+    "worldX": "153.180943",
+    "worldY": "180.092203",
+  },
+  "node-12": {
+    "worldX": "350.037723",
+    "worldY": "79.081106",
+  },
+  "node-13": {
+    "worldX": "99.944978",
+    "worldY": "267.585906",
+  },
+  "node-2": {
+    "worldX": "420.321271",
+    "worldY": "21.575783",
+  },
+  "node-3": {
+    "worldX": "363.137144",
+    "worldY": "79.351704",
+  },
+  "node-4": {
+    "worldX": "343.149759",
+    "worldY": "93.061563",
+  },
+  "node-5": {
+    "worldX": "259.544616",
+    "worldY": "153.328698",
+  },
+  "node-6": {
+    "worldX": "91.345991",
+    "worldY": "267.616425",
+  },
+  "node-7": {
+    "worldX": "55.501779",
+    "worldY": "282.454858",
+  },
+  "node-8": {
+    "worldX": "23.321507",
+    "worldY": "299.377356",
+  },
+  "node-9": {
+    "worldX": "212.644571",
+    "worldY": "130.841553",
+  },
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > shade potential summary stats 1`] = `
+{
+  "finiteCount": 140832,
+  "infiniteCount": 0,
+  "length": 140832,
+  "maxFinite": "1.000000",
+  "meanFinite": "-0.935217",
+  "minFinite": "-1.000000",
+  "negativeCount": 135928,
+  "positiveCount": 4904,
+  "sumFinite": "-131708.501616",
+  "varianceFinite": "0.093691",
+  "zeroCount": 0,
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > stall potential summary stats 1`] = `
+{
+  "finiteCount": 140832,
+  "infiniteCount": 0,
+  "length": 140832,
+  "maxFinite": "-1.000000",
+  "meanFinite": "-1.000000",
+  "minFinite": "-1.000000",
+  "negativeCount": 140832,
+  "positiveCount": 0,
+  "sumFinite": "-140832.000000",
+  "varianceFinite": "0.000000",
+  "zeroCount": 0,
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > surface potential summary stats 1`] = `
+{
+  "finiteCount": 140832,
+  "infiniteCount": 0,
+  "length": 140832,
+  "maxFinite": "1.000000",
+  "meanFinite": "-0.910687",
+  "minFinite": "-1.000000",
+  "negativeCount": 132577,
+  "positiveCount": 8255,
+  "sumFinite": "-128253.855431",
+  "varianceFinite": "0.133444",
+  "zeroCount": 0,
+}
+`;
+
+exports[`scenario A — baseline fixture for agentscript-removal refactor > world dimensions match expected values 1`] = `
+{
+  "bbox": [
+    "-13.237073436",
+    "8.489474206",
+    "-13.233124961",
+    "8.492414589",
+  ],
+  "cellCount": 140832,
+  "height": 326,
+  "patchesWidth": 432,
+  "width": 432,
+}
+`;

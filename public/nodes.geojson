@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "name": "nodes",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "FCC stairs", "pph": 500, "interval": 0, "fid": "stairs" },
+      "geometry": { "type": "Point", "coordinates": [-13.235645783280956, 8.490399899853246] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Charlotte Street", "pph": 400, "interval": 0, "fid": "charlotte" },
+      "geometry": { "type": "Point", "coordinates": [-13.235114897353972, 8.490782219858943] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Cotton Tree", "pph": 200, "interval": 0, "fid": "cotton" },
+      "geometry": { "type": "Point", "coordinates": [-13.23322713476769, 8.492215474504397] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wilberforce Street",
+        "pph": 200,
+        "interval": 0,
+        "fid": "wilberforce"
+      },
+      "geometry": { "type": "Point", "coordinates": [-13.233749796967098, 8.491694360048175] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Rawdon Street", "pph": 200, "interval": 0, "fid": "rawdon" },
+      "geometry": { "type": "Point", "coordinates": [-13.23393248141017, 8.491570702904628] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Howe Street", "pph": 200, "interval": 0, "fid": "howe" },
+      "geometry": { "type": "Point", "coordinates": [-13.23469663136898, 8.491027118753024] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Big Makit Front", "pph": 100, "interval": 0, "fid": "makit_main" },
+      "geometry": { "type": "Point", "coordinates": [-13.236233964683843, 8.48999629162555] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Big Makit Side", "pph": 50, "interval": 0, "fid": "makit_back" },
+      "geometry": { "type": "Point", "coordinates": [-13.236561580323041, 8.489862455213069] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Police Parking", "pph": 200, "interval": 0, "fid": "police" },
+      "geometry": { "type": "Point", "coordinates": [-13.236855707603548, 8.48970982141177] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Portuguese Steps", "pph": 100, "interval": 0, "fid": "portuguese" },
+      "geometry": { "type": "Point", "coordinates": [-13.235125297188061, 8.491229943319142] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Ferry Terminal", "pph": 100, "interval": 60, "fid": "ferry" },
+      "geometry": { "type": "Point", "coordinates": [-13.23595627555734, 8.490851870420935] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Cable Car Station", "pph": 1200, "interval": 10, "fid": "cable" },
+      "geometry": { "type": "Point", "coordinates": [-13.235668794001331, 8.490785723217943] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Bus Station", "pph": 1200, "interval": 10, "fid": "bus" },
+      "geometry": { "type": "Point", "coordinates": [-13.233869525510595, 8.4916968007342] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "George Street", "pph": 400, "interval": 0, "fid": "george" },
+      "geometry": { "type": "Point", "coordinates": [-13.236155370050154, 8.489996566897732] }
+    }
+  ]
+}

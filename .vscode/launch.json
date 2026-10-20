@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Vue App in Chrome",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "vite:///src/*": "${webRoot}/src/*"
+      },
+      "preLaunchTask": "vite: dev server",
+      "postDebugTask": "Terminate All Tasks"
+    }
+  ]
+}
